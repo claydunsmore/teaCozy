@@ -1,53 +1,65 @@
+:root {
+  --black: #000;
+  --seashell: seashell;
+  --flex: flex;
+  --inlineFlex: inline-flex;
+  --center: center;
+  --column: column;
+  --center: center;
+  --relative: relative;
+  --hundred: 100%;
+  --cover: cover;
+}
+
 body, header, footer, p, h1, h2, h3, a, span {
-  color: seashell;
   font-family: Helvetica, sans-serif;
 }
 
 body, header, footer, .missionStatement, .contentBackgroundOne, .locationCardOne, .locationCardTwo, .locationCardThree {
-  background-color: #000;
+  background-color: var(--black);
 }
 
-.logo, .missionStatement, .contentBackgroundOne {
-  color: seashell;
+body, header, footer, p, h1, h2, h3, a, span, .logo, .missionStatement, .contentBackgroundOne {
+  color: var(--seashell);
 }
 
 header, .heroImageOne, .heroImageTwo, .missionStatement, .cardContainerOne, .cardContainerTwo, .locationCardContainer {
-  display: flex;
+  display: var(--flex);
 }
 
 .logo, .mainNav, .berryImg, .rumImg, .donutImg, .myrtleImg, .bedfordImg, .locationCardOne, .locationCardTwo, .locationCardThree {
-  display: inline-flex;
+  display: var(--inlineFlex);
 }
 
 .missionTitle, .contentTitle, .locationTitle, span, .footerTitle, .footerContent, .locationCardOne, .locationCardTwo, .locationCardThree {
-  text-align: center;
+  text-align: var(--center);
 }
 
 .missionStatement, .heroImageTwo, .locationCardOne, .locationCardTwo, .locationCardThree {
-  flex-direction: column;
+  flex-direction: var(--column);
 }
 
 .cardContainerOne, .cardContainerTwo, .heroImageTwo {
-  justify-content: center;
+  justify-content: var(--center);
 }
 
 header, .heroImageOne, .heroImageTwo, .locationCardContainer {
-  align-items: center;
+  align-items: var(--center);
 }
 
 footer, .heroImageOne, .heroImageTwo, .contentBackgroundOne{
-  position: relative;
+  position: var(--relative);
 }
 
 .heroImageOne, .heroImageTwo {
   /*
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: var(--center);
+  background-size: var(--cover);
   */
-   width:100%;
-   height:100%;
-   object-fit: cover;
+   width: var(--hundred);
+   height: (--hundred);
+   object-fit: var(--cover);
    overflow: hidden;
 }
 
@@ -61,8 +73,8 @@ body {
    top: -.1em;
    left: -.2em;
    justify-content: flex-start;
-   border-bottom: 1px solid seashell;
-   width: 100%;
+   border-bottom: 1px solid var(--seashell);
+   width: var(--hundred);
    height: 69px;
    padding: .5em;
    z-index: 999;
@@ -100,18 +112,18 @@ body {
  }
 
 .heroImageOne {
-  position: relative;
+  position: var(--relative);
   top: 6em;
   height: 700px;
-  max-width: 100%;
+  max-width: var(--hundred);
   background: url("../img/img-mission-background.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: var(--center);
+  background-size: var(--cover);
 }
 
 .missionStatement {
-  width: 100%;
+  width: var(--hundred);
 }
 
 .contentBackgroundOne {
@@ -130,7 +142,7 @@ body {
   max-width: 100%;
   background: url("../img/img-locations-background.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: var(--center);
   background-size: cover;
 }
 

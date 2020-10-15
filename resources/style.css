@@ -9,6 +9,7 @@
   --relative: relative;
   --hundred: 100%;
   --cover: cover;
+  --block: block;
 }
 
 body, header, footer, p, h1, h2, h3, a, span {
@@ -85,7 +86,7 @@ body {
  }
 
  span {
-   display: block;
+   display: var(--block);
    margin: 10px;
  }
 
@@ -94,7 +95,7 @@ body {
  }
 
  .block {
-   display: block;
+   display: var(--block);
  }
 
  .logo {
@@ -143,7 +144,7 @@ body {
   background: url("../img/img-locations-background.jpg");
   background-repeat: no-repeat;
   background-position: var(--center);
-  background-size: cover;
+  background-size: var(--cover);
 }
 
 .locationCardContainer {
